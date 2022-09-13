@@ -14,9 +14,9 @@ export default function Welcome() {
     <Container>
       <img src={Robot} alt="" />
       <h1>
-        Welcome, <span>{userName}!</span>
+        Hello, <span>{userName}!...Welcome to Willchat 1.0</span>
       </h1>
-      <h3>Please select a chat to Start messaging.</h3>
+      <h3>Please select a contact to Start messaging.</h3>
     </Container>
   );
 }

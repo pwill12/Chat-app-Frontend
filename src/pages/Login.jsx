@@ -3,6 +3,8 @@ import axios from "axios";
 import styled from "styled-components";
 import { useNavigate, Link } from "react-router-dom";
 import Logo from "../assets/logo.svg";
+import Chatting from "../assets/Chatting-cuate.png";
+
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { loginRoute } from "../utils/APIRoutes";
@@ -66,8 +68,8 @@ export default function Login() {
       <FormContainer>
         <form action="" onSubmit={(event) => handleSubmit(event)}>
           <div className="brand">
-            <img src={Logo} alt="logo" />
-            <h1>snappy</h1>
+            <img src={Chatting} alt="logo" />
+            <h1>WillChat</h1>
           </div>
           <input
             type="text"
@@ -101,14 +103,15 @@ const FormContainer = styled.div`
   justify-content: center;
   gap: 1rem;
   align-items: center;
-  background-color: #131324;
+  // background-color: #131324;
+  background-color: #212222;
   .brand {
     display: flex;
     align-items: center;
     gap: 1rem;
     justify-content: center;
     img {
-      height: 5rem;
+      height: 7rem;
     }
     h1 {
       color: white;
@@ -138,7 +141,8 @@ const FormContainer = styled.div`
     }
   }
   button {
-    background-color: #4e0eff;
+    // background-color: #4e0eff;
+    background-color: lightgreen;
     color: white;
     padding: 1rem 2rem;
     border: none;
